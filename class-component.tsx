@@ -20,10 +20,16 @@ class MyComponent extends Component {
     this.setState({isLoading: true, error: null});
     
     try {
-      const resp = await fetch(`https://...?id=${this.props.id}`).then(r=>r.json());
-      this.setState({isLoading: false, data: resp});
+      const resp = await fetch(`https://...?id=${this.props.id}`).then(r => r.json());
+      this.setState({
+        isLoading: false,
+        data: resp
+      });
     } catch(e) {
-      this.setState({isLoading: false, error: e});
+      this.setState({
+        isLoading: false,
+        error: e
+      });
     }
   }
   
