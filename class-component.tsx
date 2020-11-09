@@ -28,7 +28,7 @@ class MyComponent extends Component {
   }
   
   componentDidMount() {
-    loadAsyncData();
+    this.loadAsyncData();
   }
   
   render() {
