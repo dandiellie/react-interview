@@ -1,3 +1,8 @@
+// 1. Clone this repo locally.
+// 2. Create a new branch.
+// 3. Update this React class component to be a React functional component.
+// 4. Commit your work to your new branch.
+
 import React, {Component} from 'react';
 
 class MyComponent extends Component {
